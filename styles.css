@@ -54,4 +54,36 @@ header nav a {
     margin-top: 0;
 }
 
+/* RECHERCHE/FILTRES */
 
+#search {
+    margin-top: 30px;
+}
+#search p {
+    display: flex;
+    align-items: center;
+}
+.fa-map-marker-alt:before {
+    background-color: #F2F2F2;
+    padding: 11px 15px;
+    border-radius: 10px 0 0 10px;
+}
+
+input[type="search"] {
+    padding: 10px 2px 10px 5px;
+    border: #F2F2F2 1px solid;
+}
+
+::placeholder{
+    color: #000;
+    font-weight: bold;
+    opacity: 1
+}
+
+input[type="submit"] {
+    background-color: #0065FC;
+    border: none;
+    color: #fff;
+    padding: 11px 15px;
+    border-radius: 0 10px 10px 0;
+}
