@@ -1,0 +1,57 @@
+/*Corps de la page */
+
+#bloc_page {
+    width: 1000px;
+    margin: auto;
+    font-family: 'Raleway', Verdana, sans-serif;
+}
+
+/* HEADER */
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+header nav ul{
+   display: flex;
+    
+}
+
+header nav li {
+    list-style-type: none;
+    padding-right: 10%;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #000;    
+}
+
+#bold_blue {
+    font-weight: bold;
+    color: #0065FC;
+}
+
+    /* AU SURVOL */
+
+.nav_hover:hover {
+    color: #0065FC;
+    border-top: 3px solid #0065FC;
+    padding-top: 20px;
+}
+
+/* BLOC PARAGRAPHE */
+
+#bold_black {
+    font-weight: bold;
+    margin: 30px 0 5px 0;
+}
+
+#bloc_p p:last-child {
+    font-size: .8em;
+    margin-top: 0;
+}
+
+
