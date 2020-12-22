@@ -123,6 +123,13 @@ input[type="submit"] {
     padding: 5px 3px;
 }
 
+    /* AU SURVOL */
+
+#filtres li:hover {
+    background-color: #0065FC;
+    color: #fff;
+}
+
 /* BLOC INFO */
 
 #bloc_info {
