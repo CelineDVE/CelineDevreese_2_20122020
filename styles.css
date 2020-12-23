@@ -284,3 +284,36 @@ i.fas.fa-star.star_grey {
     display: inline-block;
     vertical-align: top;
 }
+
+/* SECTION ACTIVITÉS */
+
+#activities {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#activities h2 {
+    width: 100%;
+    font-size: 1em;
+}
+
+.card_activities {
+    display: flex;
+    box-shadow: 5px 5px 10px #d9d9d9;
+    border-radius: 10px;
+    width: 210px;
+    height: 300px;
+}
+
+.card_activities img {
+    object-fit: cover;
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+    height: 260px;
+}
+
+.card_activities h3 {
+    font-size: .8em;
+    margin: 10px;
+}
