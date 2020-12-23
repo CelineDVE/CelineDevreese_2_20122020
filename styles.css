@@ -80,7 +80,6 @@ input[type="search"] {
     border-width: 1px 0;
 }
 
-
 ::placeholder{
     color: #000;
     font-weight: bold;
@@ -162,7 +161,7 @@ input[type="submit"] {
 
 /* SECTION HEBERGEMENTS */
 
-    /* COULEUR DES ETOILES*/
+    /* ETOILES */
 
 i.fas.fa-star {
     color: #0065fc;
@@ -173,11 +172,15 @@ i.fas.fa-star.star_grey {
     color: #d9d9d9;
 }
 
+.stars {
+    margin: 0 0 0 10px;
+}
     /* CARTES D'HEBERGEMENTS */
 
 #hebergements {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 #result_hebergements {
     display: flex;
@@ -185,20 +188,20 @@ i.fas.fa-star.star_grey {
     justify-content: center;
     background-color: #F2F2F2;
     border-radius: 10px;
-    flex-basis: 60%;
+    flex-basis: 68%;
     width: 100%;
     height: 430px;
-    margin: 20px;
+    margin: 20px 0;
     
 }
-
 .card_heberg {
     background-color: #fff;
     margin: 0 10px 0 10px;
     border-radius: 10px;
     box-shadow: 5px 5px 10px #d9d9d9;
     padding: 3px;
-    width: 160px;
+    width: 180px;
+    height: 140px;
 }
 
 #result_hebergements h2 {
@@ -209,7 +212,7 @@ i.fas.fa-star.star_grey {
 
 .card_heberg h3 {
     width: 100%;
-    font-size: .7em;
+    font-size: .8em;
     margin: 3px 0 0 10px;
 }
 
@@ -218,14 +221,10 @@ i.fas.fa-star.star_grey {
     margin: 3px 0 0 10px;
 }
 
-.stars {
-    margin: 0 0 0 10px;
-}
-
 .card_heberg img {
     object-fit: cover;
     width: 100%;
-    height: 75px;
+    height: 80px;
     border-radius: 8px 8px 0 0;
 }
 
@@ -243,39 +242,45 @@ i.fas.fa-star.star_grey {
     background-color: #F2F2F2;
     border-radius: 10px;
     height: 430px;
-    margin: 20px 0 20px 0;
+    margin: 20px 0 20px 20px;
 }
 
 #result_pop h2 {
-    width: 100%;
-    margin: 30px 0 0 30px;
+    margin: 30px 30px 0 30px;
     font-size: 1em;
+    display: flex;
+    justify-content: space-between;
 }
 
 .card_pop {
-    display: flex;
-    
     background-color: #fff;
-    margin: 20px;
-    height: 110px;
+    box-shadow: 5px 5px 10px #d9d9d9;
     border-radius: 10px;
+    margin: 20px;
+    width: auto;
+    height: 96px;
 }
 
 .card_pop h3 {
-    width: 100%;
-    font-size: .7em;
-    margin: 3px 0 0 10px;
+    font-size: .8em;
+    margin: 10px 0 0 10px;
+    width: 92%;
 }
 
 .card_pop p {
     font-size: 0.6em;
-    margin: 3px 0 0 10px;
+    margin: 3px 0 15px 10px;
 }
 
 .card_pop img {
     object-fit: cover;
-    width: 110px;
-    height: 100px;
+    width: 90px;
+    height: 90px;
     border-radius: 10px 0 0 10px;
-    margin: 5px;
+    margin: 3px;
+}
+
+.info_hebergement {
+    display: inline-block;
+    vertical-align: top;
 }
