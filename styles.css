@@ -26,7 +26,6 @@ header {
 
 header nav ul{
    display: flex;
-    
 }
 
 header nav li {
@@ -69,6 +68,7 @@ header nav li {
     display: flex;
     align-items: center;
 }
+
 .fa-map-marker-alt:before {
     background-color: #F2F2F2;
     padding: 10.6px 15px;
@@ -153,7 +153,6 @@ input[type="submit"] {
     border: #d9d9d9 solid 1.5px;
     padding: 4px 7px;
     border-radius: 10px;
-    
 }
 
 #bloc_info p {
@@ -186,6 +185,7 @@ i.fas.fa-star.star_grey {
     justify-content: space-between;
     margin: 0 30px;
 }
+
 #result_hebergements {
     display: flex;
     flex-wrap: wrap;
@@ -197,6 +197,7 @@ i.fas.fa-star.star_grey {
     height: 430px;
     margin: 20px 0;
 }
+
 .card_heberg {
     background-color: #fff;
     margin: 0 10px 0 10px;
@@ -318,8 +319,7 @@ i.fas.fa-star.star_grey {
     height: 260px;
 }
 
-.card_activities h3,
-.double_card h3,
+.card_activities h3, .double_card h3,
 #activity1 h3 {
     font-size: .8em;
     margin: 10px 15px;
@@ -338,8 +338,7 @@ i.fas.fa-star.star_grey {
     justify-content: space-between;
 }
 
-#activity1,
-#activity2 {
+#activity1, #activity2 {
     padding-bottom: 3px;
 }
 
@@ -378,8 +377,7 @@ footer {
     padding: 30px;
 }
 
-footer h1,
-footer li {
+footer h1, footer li {
     font-size: .8em;
     margin: 10px;
 }
