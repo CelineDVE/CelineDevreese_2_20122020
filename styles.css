@@ -24,14 +24,21 @@ header {
     margin: 0 0 0 30px;
 }
 
+#top {
+    display: flex;
+    flex-flow: row-reverse wrap;
+    align-items: center;
+    font-size: .8em;
+}
+
 header nav ul{
-   display: flex;
+    display: flex;
+    margin-right: 25px;
 }
 
 header nav li {
     list-style-type: none;
     padding: 0px 25px ;
-    font-size: .8em;
 }
 
 #bold_blue {
@@ -81,7 +88,7 @@ input[type="search"] {
     border-width: 1px 0;
 }
 
-::placeholder{
+::placeholder {
     color: #000;
     font-weight: bold;
     opacity: 1
@@ -93,6 +100,10 @@ input[type="submit"] {
     color: #fff;
     padding: 11px 15px;
     border-radius: 0 10px 10px 0;
+}
+
+input[type="image"] {
+    display: none;
 }
 
 /* FILTRES */
@@ -107,6 +118,7 @@ input[type="submit"] {
 
 #filtres ul {
     display: flex;
+    flex-wrap: wrap;
 }
 
 #filtres li {
@@ -143,7 +155,7 @@ input[type="submit"] {
 
 #bloc_info {
     display: flex;
-    align-items: center;
+    align-items: baseline;
     margin-left: 30px;
 }
 
@@ -392,4 +404,165 @@ footer ul {
 
 footer div {
     width: 30%;
+}
+
+/* RESPONSIVE */
+
+    /* TABLETTES */
+
+    @media all and (max-width: 880px)
+{
+    #bloc_page {
+        width: auto;
+    }
+}
+
+    /* MOBILES */
+
+@media all and (max-width: 480px)
+{
+    #bloc_page {
+        width: auto;
+    }
+
+        /* HEADER */
+
+    header {
+        margin: 20px 15px 0 15px;
+    }
+            /* MENU */
+    #top {
+        display: contents;
+    }
+
+    #top a {
+        margin-top: 20px;
+    }
+
+    header nav li {
+        margin-top: 15px;
+        border-bottom: 3px solid #F2F2F2;
+        padding-bottom: 10px;
+    }
+
+    nav {
+        margin: auto;
+    }
+        /* AU SURVOL */
+    .nav_hover:hover {
+        color: #0065FC;
+        border-top: none;
+        border-bottom: 3px solid #0065FC;
+        padding-bottom: 10px;
+    }
+
+        /* BLOC PARAGRAPHE */
+    #bold_black {
+        margin: 15px;
+        font-size: 1.2em;
+    }
+
+    #bloc_p p:last-child{
+        margin: 0 15px;
+    }
+        /* RECHERCHE */
+    #search {
+        margin-left: 15px;
+    }
+
+    input[type="submit"] {
+        display: none;
+    }
+
+    input[type="image"] {
+        display: flex;
+        width: 15px;
+        background-color: #0065FC;
+        border: none;
+        padding: 11px;
+        border-radius: 10px;
+        margin-left: -6px;
+    }
+
+    input[type="search"] {
+        font-size: 1em;
+        padding: 8px 0 8px 10px;
+    }
+        /* FILTRES */ 
+    #filtres {
+        display: block;
+        align-items: flex-start;
+        font-size: 1em;
+        margin-left: 15px;
+    }
+
+    #filtres ul {
+        justify-content: flex-start;
+        padding-left: 0;
+        width: 100%;
+        font-size: .8em;
+    }
+
+    #filtres li {
+        margin-bottom: 10px;
+        padding: 9.5px 15px 9.5px 0px;
+    }
+
+    #filtres .fas {
+        padding: 13px;
+    }
+    /* BLOC INFO */
+    #bloc_info {
+        margin-left: 15px;
+    }
+        /* SECTION HEBERGEMENTS */
+    #hebergements {
+        flex-direction: column-reverse;
+        margin: 0;
+    }
+            /* LES PLUS POPULAIRES */
+    #result_pop {
+        width: 100%;
+        margin: 20px 0;
+        border-radius: 0;
+        padding-bottom: 10px;
+    }
+
+    #result_pop h2 {
+        font-size: 1.2em;
+    }
+            /* CARTES D'HEBERGEMENTS */
+    #result_hebergements {
+        width: 100%;
+        margin: 0;
+        border-radius: 0;
+        padding-bottom: 10px;
+        background: none;
+    }
+
+    #result_hebergements h2 {
+        font-size: 1.2em;
+        margin: 0 0 15px 15px;
+    }
+
+    .card_heberg {
+        width: 280px;
+        border: solid #F2F2F2 1px;
+        margin-bottom: 10px;
+    }
+
+    #lien_plus {
+        font-size: 1em;
+    }
+        /* SECTION ACTIVITÉS */
+    #activities {
+        margin-top: 400px;
+    }
+
+    #activities h2 {
+        font-size: 1.2em;
+    }
+
+        /* FOOTER */
+
 }
