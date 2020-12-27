@@ -24,15 +24,21 @@ header {
     margin: 0 0 0 30px;
 }
 
+#top {
+    display: flex;
+    flex-flow: row-reverse wrap;
+    align-items: center;
+    font-size: .8em;
+}
+
 header nav ul{
-   display: flex;
-    
+    display: flex;
+    margin-right: 25px;
 }
 
 header nav li {
     list-style-type: none;
     padding: 0px 25px ;
-    font-size: .8em;
 }
 
 #bold_blue {
@@ -394,4 +400,93 @@ footer ul {
 
 footer div {
     width: 30%;
+}
+
+/* RESPONSIVE */
+
+    /* TABLETTES */
+
+    @media all and (max-width: 880px)
+{
+    #bloc_page {
+        width: auto;
+    }
+}
+
+    /* MOBILES */
+
+@media all and (max-width: 480px)
+{
+    #bloc_page {
+        width: auto;
+    }
+
+        /* HEADER */
+
+    header {
+        margin: 20px 15px 0 15px;
+    }
+
+            /* MENU */
+    #top {
+        display: contents;
+    }
+
+    #top a {
+        margin-top: 20px;
+    }
+
+    header nav li {
+        margin-top: 15px;
+        border-bottom: 3px solid #F2F2F2;
+        padding-bottom: 10px;
+    }
+
+    nav {
+        margin: auto;
+    }
+
+        /* AU SURVOL */
+
+    .nav_hover:hover {
+        color: #0065FC;
+        border-top: none;
+        border-bottom: 3px solid #0065FC;
+        padding-bottom: 10px;
+    }
+
+        /* BLOC PARAGRAPHE */
+    #bold_black {
+        margin: 15px;
+        font-size: 1.2em;
+    }
+
+    #bloc_p p:last-child{
+        margin: 0 15px;
+    }
+        /* RECHERCHE */
+    #search {
+        margin-left: 15px;
+    }
+
+    input[type="submit"] {
+        background-color: #0065FC;
+        padding: 11px 15px;
+        border-radius: 10px;
+    }
+        /* FILTRES */ 
+    #filtres {
+        display: block;
+        align-items: flex-start;
+    }
+
+    #filtres ul {
+        justify-content: flex-start;
+    }
+        /* SECTION HEBERGEMENTS */
+            /* LES PLUS POPULAIRES */
+            /* CARTES D'HEBERGEMENTS */
+        /* SECTION ACTIVITÉS */
+        /* FOOTER */
+
 }
