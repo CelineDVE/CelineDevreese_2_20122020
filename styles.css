@@ -87,7 +87,7 @@ input[type="search"] {
     border-width: 1px 0;
 }
 
-::placeholder{
+::placeholder {
     color: #000;
     font-weight: bold;
     opacity: 1
@@ -99,6 +99,10 @@ input[type="submit"] {
     color: #fff;
     padding: 11px 15px;
     border-radius: 0 10px 10px 0;
+}
+
+input[type="image"] {
+    display: none;
 }
 
 /* FILTRES */
@@ -113,6 +117,7 @@ input[type="submit"] {
 
 #filtres ul {
     display: flex;
+    flex-wrap: wrap;
 }
 
 #filtres li {
@@ -149,7 +154,7 @@ input[type="submit"] {
 
 #bloc_info {
     display: flex;
-    align-items: center;
+    align-items: baseline;
     margin-left: 30px;
 }
 
@@ -470,18 +475,53 @@ footer div {
     }
 
     input[type="submit"] {
-        background-color: #0065FC;
-        padding: 11px 15px;
-        border-radius: 10px;
+        display: none;
     }
+
+    input[type="image"] {
+        display: flex;
+        width: 15px;
+        background-color: #0065FC;
+        border: none;
+        padding: 11px;
+        border-radius: 10px;
+        margin-left: -6px;
+    }
+
+    input[type="search"] {
+        font-size: 1em;
+        padding: 8px 0 8px 10px;
+        }
+    }
+    
         /* FILTRES */ 
     #filtres {
         display: block;
         align-items: flex-start;
+        font-size: 1em;
+        margin-left: 15px;
     }
 
     #filtres ul {
         justify-content: flex-start;
+        padding-left: 0;
+        width: 100%;
+        font-size: .8em;
+    }
+
+    #filtres li {
+        margin-bottom: 10px;
+        padding: 9.5px 15px 9.5px 0px;
+    }
+
+    #filtres .fas {
+        padding: 13px;
+    }
+
+    /* BLOC INFO */
+
+    #bloc_info {
+        margin-left: 15px;
     }
         /* SECTION HEBERGEMENTS */
             /* LES PLUS POPULAIRES */
