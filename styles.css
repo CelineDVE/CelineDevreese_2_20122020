@@ -24,15 +24,28 @@ header {
     margin: 0 0 0 30px;
 }
 
+header img {
+    margin-top: 20px;
+}
+
+#top {
+    display: flex;
+    flex-flow: row-reverse wrap;
+    align-items: center;
+    font-size: .8em;
+    margin-right: 30px;
+}
+
 header nav ul{
-   display: flex;
-    
+    display: flex;
+    margin-right: 25px;
+    width: 250px;
 }
 
 header nav li {
     list-style-type: none;
-    padding: 0px 25px ;
-    font-size: .8em;
+    padding: 0px 25px;
+    width: 50%;
 }
 
 #bold_blue {
@@ -45,7 +58,7 @@ header nav li {
 .nav_hover:hover {
     color: #0065FC;
     border-top: 3px solid #0065FC;
-    padding-top: 20px;
+    padding-top: 30px;
 }
 
 /* BLOC PARAGRAPHE */
@@ -143,23 +156,19 @@ input[type="submit"] {
 
 #bloc_info {
     display: flex;
-    align-items: center;
+    font-size: .8em;
+    align-items: baseline;
     margin-left: 30px;
+    padding-top: 7px;
 }
 
 .fa-info:before {
     color: #0065FC;
-    font-size: .5em ;
     border: #d9d9d9 solid 1.5px;
-    padding: 4px 7px;
-    border-radius: 10px;
-    
-}
-
-#bloc_info p {
-    font-size: .8em;
-    margin-left: 10px;
-    padding-top: 7px;
+    padding: 4px 8px;
+    border-radius: 12px;
+    margin-right: 10px;
+    font-size: .7em;
 }
 
 /* SECTION HEBERGEMENTS */
@@ -186,6 +195,7 @@ i.fas.fa-star.star_grey {
     justify-content: space-between;
     margin: 0 30px;
 }
+
 #result_hebergements {
     display: flex;
     flex-wrap: wrap;
@@ -197,6 +207,13 @@ i.fas.fa-star.star_grey {
     height: 430px;
     margin: 20px 0;
 }
+
+#result_hebergements h2 {
+    width: 100%;
+    margin: 30px 0 0px 30px;
+    font-size: 1em;
+}
+
 .card_heberg {
     background-color: #fff;
     margin: 0 10px 0 10px;
@@ -205,12 +222,6 @@ i.fas.fa-star.star_grey {
     padding: 3px;
     width: 180px;
     height: 140px;
-}
-
-#result_hebergements h2 {
-    width: 100%;
-    margin: 30px 0 0px 30px;
-    font-size: 1em;
 }
 
 .card_heberg h3 {
@@ -394,4 +405,230 @@ footer ul {
 
 footer div {
     width: 30%;
+}
+
+/* RESPONSIVE */
+
+    /* TABLETTES */
+
+    @media all and (max-width: 880px)
+{
+    #bloc_page {
+        width: auto;
+    }
+}
+    /* MOBILES */
+
+    @media screen and (max-width: 480px)
+{
+    #bloc_page {
+        width: auto;
+    }
+
+        /* HEADER */
+
+    header {
+        margin: 20px 15px 0 15px;
+    }
+
+    header img {
+        margin-top: 0;
+    }
+            /* MENU */
+    #top {
+        display: contents;
+        font-size: 1em;
+    }
+
+    #top a {
+        margin-top: 20px;
+    }
+
+    header nav li {
+        margin-top: 15px;
+        border-bottom: 3px solid #F2F2F2;
+        padding-bottom: 10px;
+    }
+
+    nav {
+        margin: auto;
+    }
+        /* AU SURVOL */
+    .nav_hover:hover {
+        color: #0065FC;
+        border-top: none;
+        border-bottom: 3px solid #0065FC;
+        padding-bottom: 10px;
+    }
+
+        /* BLOC PARAGRAPHE */
+    #bold_black {
+        margin: 15px;
+        font-size: 1.5em;
+    }
+
+    #bloc_p p:last-child{
+        margin: 0 15px;
+        font-size: 1em;
+    }
+        /* RECHERCHE */
+    #search {
+        margin: 30px 0 30px 15px;
+    }
+
+    .fa-map-marker-alt:before {
+        padding: 16.6px 17px;
+    }
+
+    input[type="submit"] {
+        display: none;
+    }
+
+    input[type="image"] {
+        display: flex;
+        width: 17px;
+        background-color: #0065FC;
+        border: none;
+        padding: 16px;
+        border-radius: 15px;
+        margin-left: -9px;
+    }
+
+    input[type="search"] {
+        font-size: 1.2em;
+        padding: 12px 0 12px 15px;
+    }
+        /* FILTRES */ 
+    #filtres {
+        display: block;
+        align-items: flex-start;
+        font-size: 1.2em;
+        margin-left: 15px;
+    }
+
+    #filtres ul {
+        justify-content: flex-start;
+        padding-left: 0;
+        width: 100%;
+        font-size: 0.9em;
+    }
+
+    #filtres li {
+        margin-bottom: 10px;
+        padding: 11.5px 15px 11.5px 0px;
+    }
+
+    #filtres .fas {
+        padding: 15px;
+    }
+    /* BLOC INFO */
+    #bloc_info {
+        margin: 0 15px;
+    }
+
+    #bloc_info p {
+        font-size: 1em;
+    }
+        /* SECTION HEBERGEMENTS */
+    #hebergements {
+        flex-direction: column-reverse;
+        margin: 0;
+    }
+            /* LES PLUS POPULAIRES */
+    #result_pop {
+        width: 100%;
+        height: 700px;
+        margin: 20px 0;
+        border-radius: 0;
+        padding-bottom: 30px;
+    }
+
+    #result_pop h2 {
+        font-size: 1.5em;
+        margin: 45px 15px 30px 15px;
+    }
+
+    .card_pop {
+        border-radius: 15px;
+        margin: 15px;
+        width: auto;
+        height: 150px;
+    }
+
+    .card_pop img {
+        object-fit: cover;
+        width: 140px;
+        height: 140px;
+        border-radius: 13px 0 0 13px;
+        margin: 5px;
+    }
+
+    .card_pop h3 {
+        font-size: 1.1em;
+        margin: 15px 0 0 15px;
+    }
+
+    i.fas.fa-star {
+        font-size: .8em;
+    }
+
+    .stars {
+        margin: 0 0 0 15px;
+    }
+
+    .card_pop p {
+        font-size: .9em;
+        margin: 8px 0 35px 15px;
+    }
+            /* CARTES D'HEBERGEMENTS */
+    #result_hebergements {
+        width: 100%;
+        height: 1500px;
+        margin: 0;
+        border-radius: 0;
+        padding-bottom: 10px;
+        background: none;
+    }
+
+    #result_hebergements h2 {
+        font-size: 1.5em;
+        margin: 15px 0 15px 15px;
+    }
+
+    .card_heberg {
+        width: 400px;
+        height: 200px;
+        border-radius: 20px;
+        border: solid #F2F2F2 1px;
+        margin-bottom: 15px;
+        padding: 5px;
+    }
+
+    .card_heberg img {
+        height: 120px;
+        border-radius: 15px 15px 0 0;
+    }
+
+    .card_heberg h3 {
+        font-size: 1.1em;
+        margin: 5px 0 0 15px;
+    }
+
+    .card_heberg p {
+        font-size: .9em;
+        margin: 3px 0 5px 15px;
+    }
+
+    #lien_plus {
+        font-size: 1.2em;
+        margin: 30px 0px 30px 15px;
+    }
+        /* SECTION ACTIVITÉS */
+
+    #activities h2 {
+        font-size: 1.5em;
+    }
+
+        /* FOOTER */
+
 }
