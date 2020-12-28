@@ -434,6 +434,7 @@ footer div {
             /* MENU */
     #top {
         display: contents;
+        font-size: 1em;
     }
 
     #top a {
@@ -460,15 +461,20 @@ footer div {
         /* BLOC PARAGRAPHE */
     #bold_black {
         margin: 15px;
-        font-size: 1.2em;
+        font-size: 1.5em;
     }
 
     #bloc_p p:last-child{
         margin: 0 15px;
+        font-size: 1em;
     }
         /* RECHERCHE */
     #search {
-        margin-left: 15px;
+        margin: 30px 0 30px 15px;
+    }
+
+    .fa-map-marker-alt:before {
+        padding: 16.6px 17px;
     }
 
     input[type="submit"] {
@@ -477,23 +483,23 @@ footer div {
 
     input[type="image"] {
         display: flex;
-        width: 15px;
+        width: 17px;
         background-color: #0065FC;
         border: none;
-        padding: 11px;
-        border-radius: 10px;
-        margin-left: -6px;
+        padding: 16px;
+        border-radius: 15px;
+        margin-left: -9px;
     }
 
     input[type="search"] {
-        font-size: 1em;
-        padding: 8px 0 8px 10px;
+        font-size: 1.2em;
+        padding: 12px 0 12px 15px;
     }
         /* FILTRES */ 
     #filtres {
         display: block;
         align-items: flex-start;
-        font-size: 1em;
+        font-size: 1.2em;
         margin-left: 15px;
     }
 
@@ -501,20 +507,24 @@ footer div {
         justify-content: flex-start;
         padding-left: 0;
         width: 100%;
-        font-size: .8em;
+        font-size: 0.9em;
     }
 
     #filtres li {
         margin-bottom: 10px;
-        padding: 9.5px 15px 9.5px 0px;
+        padding: 11.5px 15px 11.5px 0px;
     }
 
     #filtres .fas {
-        padding: 13px;
+        padding: 15px;
     }
     /* BLOC INFO */
     #bloc_info {
-        margin-left: 15px;
+        margin: 0 15px;
+    }
+
+    #bloc_info p {
+        font-size: 1em;
     }
         /* SECTION HEBERGEMENTS */
     #hebergements {
@@ -524,17 +534,53 @@ footer div {
             /* LES PLUS POPULAIRES */
     #result_pop {
         width: 100%;
+        height: 700px;
         margin: 20px 0;
         border-radius: 0;
-        padding-bottom: 10px;
+        padding-bottom: 30px;
     }
 
     #result_pop h2 {
-        font-size: 1.2em;
+        font-size: 1.5em;
+        margin: 45px 15px 30px 15px;
+    }
+
+    .card_pop {
+        border-radius: 15px;
+        margin: 15px;
+        width: auto;
+        height: 150px;
+    }
+
+    .card_pop img {
+        object-fit: cover;
+        width: 140px;
+        height: 140px;
+        border-radius: 13px 0 0 13px;
+        margin: 5px;
+    }
+
+    .card_pop h3 {
+        font-size: 1.1em;
+        margin: 15px 0 0 15px;
+    }
+
+    i.fas.fa-star {
+        font-size: .8em;
+    }
+
+    .stars {
+        margin: 0 0 0 15px;
+    }
+
+    .card_pop p {
+        font-size: .9em;
+        margin: 8px 0 35px 15px;
     }
             /* CARTES D'HEBERGEMENTS */
     #result_hebergements {
         width: 100%;
+        height: 1500px;
         margin: 0;
         border-radius: 0;
         padding-bottom: 10px;
@@ -542,26 +588,45 @@ footer div {
     }
 
     #result_hebergements h2 {
-        font-size: 1.2em;
-        margin: 0 0 15px 15px;
+        font-size: 1.5em;
+        margin: 15px 0 15px 15px;
     }
 
     .card_heberg {
-        width: 280px;
+        width: 400px;
+        height: 200px;
+        border-radius: 20px;
         border: solid #F2F2F2 1px;
-        margin-bottom: 10px;
+        margin-bottom: 15px;
+        padding: 5px;
+    }
+
+    .card_heberg img {
+        height: 120px;
+        border-radius: 15px 15px 0 0;
+    }
+
+    .card_heberg h3 {
+        font-size: 1.1em;
+        margin: 5px 0 0 15px;
+    }
+
+    .card_heberg p {
+        font-size: .9em;
+        margin: 3px 0 5px 15px;
     }
 
     #lien_plus {
-        font-size: 1em;
+        font-size: 1.2em;
+        margin: 30px 0px 30px 15px;
     }
         /* SECTION ACTIVITÉS */
     #activities {
-        margin-top: 400px;
+        
     }
 
     #activities h2 {
-        font-size: 1.2em;
+        font-size: 1.5em;
     }
 
         /* FOOTER */
