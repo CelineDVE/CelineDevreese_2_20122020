@@ -87,6 +87,9 @@ header nav li {
     padding: 10.6px 15px;
     border-radius: 10px 0 0 10px;
 }
+input[type="image"] {
+    display: none;
+}
 
 input[type="search"] {
     padding: 10px 2px 10px 5px;
@@ -120,6 +123,7 @@ input[type="submit"] {
 
 #filtres ul {
     display: flex;
+    flex-wrap: wrap;
 }
 
 #filtres li {
