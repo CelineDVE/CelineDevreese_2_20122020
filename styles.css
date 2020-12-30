@@ -325,8 +325,6 @@ i.fas.fa-star.star_grey {
 }
 
 .card_activities {
-    display: flex;
-    flex-direction: column;
     box-shadow: 3px 3px 20px #d9d9d9;
     border-radius: 10px;
     width: 210px;
@@ -643,20 +641,46 @@ footer div {
     }
         /* SECTION ACTIVITÉS */
     #activities {
-        display: contents;
+        justify-content: center;
+        margin: 0 15px;
+    }
+
+    #activities h2 {
+        font-size: 1.2em;
+        padding-bottom: 20px;
     }
 
     #activities a {
-        border-radius: 20px;
-        margin: auto;
-        padding: 15px;
+        width: 100%;
+        margin-bottom: 25px;
     }
 
-    #activities1 {
+    .card_activities {
         width: auto;
         height: 190px;
         border-radius: 20px;
     }
+
+    .double_card {
+        width: 100%;
+    }
+
+    #activity1, #activity2, .activity3{
+        height: 180px;
+        border-radius: 20px;
+    }
+
+    .card_activities img, #activity1 img,
+    #activity2 img, .activity3 img {
+        height: 130px;
+        border-radius: 20px 20px 0 0;
+    }
+
+    .card_activities h3, .double_card h3,
+    #activity1 h3 {
+    font-size: 1em;
+    margin-top: 15px;
+}
 
         /* FOOTER */
 
@@ -670,11 +694,11 @@ footer div {
     }
 
     footer h1{
-        font-size: 1.3em;
+        font-size: 1.2em;
         margin-top: 20px;
     }
     footer li {
-        font-size: 1.1em;
+        font-size: 1em;
     }
 
     footer ul {
