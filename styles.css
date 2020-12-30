@@ -428,44 +428,160 @@ footer div {
     #bloc_page {
         width: auto;
     }
-}
-    /* MOBILES */
 
-    @media screen and (max-width: 480px)
-{
-        /* HEADER */
+    /* HEADER */
+
     header {
         margin: auto;
         width: 100%;
+        align-items: flex-start;
     }
 
     header img {
         padding-left: 15px;
     }
+
+        /* MENU */
+
+    #top {
+        font-size: 1.1em;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #bold_blue {
+        margin: 35px 15px 0 30px;
+    }
+
+    nav {
+        width: 100%;
+    }
+
+    header nav ul {
+        margin: auto;
+        display: inline;
+    }
+
+    header nav li {
+        padding-bottom: 20px;
+    }
+
+            /* AU SURVOL */
+
+    header nav li a:hover {
+        color: #0065FC;
+        border-top: none;
+    }
+
+    header nav li:hover {
+        color: #0065FC;
+        list-style-type: disclosure-closed;
+    }
+
+    /* BLOC PARAGRAPHE */
+
+    #bold_black {
+        padding: 0 0 10px 15px;
+        font-size: 1.2em;
+        margin: auto;
+    }
+
+    #bloc_p p:last-child{
+        padding: 0 15px;
+        margin: auto;
+        font-size: 1em;
+    }
+
+    /* RECHERCHE */
+    #search {
+        display: flex;
+        justify-content: flex-end;
+        margin: 0 15px 0 0;
+    }
+
+    input[type="search"] {
+        font-size: 1em;
+    }
+
+    input[type="submit"] {
+        font-size: 1em;
+    }
+
+    .fa-map-marker-alt:before {
+        padding: 12.6px 17px;
+    }
+    
+    /* FILTRES */
+    #filtres {
+        display: block;
+        font-size: 1em;
+        margin-left: 15px;
+    }
+
+    #filtres h3 {
+        margin-top: 0;
+    }
+
+    #filtres ul {
+        justify-content: center;
+        margin: auto;
+        padding-left: 0;
+        width: 100%;
+        font-size: 0.9em;
+    }
+    /* SECTION HEBERGEMENTS */
+    #hebergements {
+        display: contents;
+    }
+            /* LES PLUS POPULAIRES */
+    #result_pop {
+        width: auto;
+        margin: auto;
+        border-radius: 0;
+        padding: 10px 15px;
+    }
+
+    .card_pop {
+        width: 33.33%;
+        border-radius: 20px;
+    }
+
+    .card_pop img {
+        border-radius: 15px 0 0 15px;
+    }
+
+}
+    /* MOBILES */
+
+    @media screen and (max-width: 480px)
+{
             /* MENU */
     #top {
         display: contents;
         font-size: 1.1em;
     }
-
     #bold_blue {
         margin: 35px 15px 0 0;
     }
 
     nav {
-        width: 100%;
         margin: 30px 0;
     }
 
     header nav ul {
         margin: auto;
         padding: 0;
+        display: flex;
     }
 
     header nav li {
         display: flex;
         justify-content: center;
         width: 100%;
+    }
+
+    header nav li {
+        
         border-bottom: 3px solid #f2f2f2;
         padding-bottom: 15px;
     }
@@ -473,11 +589,9 @@ footer div {
     header nav li a {
         padding: 0;
     }
-
         /* AU SURVOL */
     header nav li a:hover {
         color: #0065FC;
-        border-top: none;
         padding: 0;
     }
 
@@ -487,22 +601,12 @@ footer div {
         /* BLOC PARAGRAPHE */
     #bold_black {
         padding: 15px;
-        margin: auto;
         font-size: 1.5em;
-    }
-
-    #bloc_p p:last-child{
-        padding: 0 15px;
-        margin: auto;
-        font-size: 1em;
     }
         /* RECHERCHE */
     #search {
         padding: 15px 15px 5px 15px;
         margin: auto;
-    }
-
-    #search p {
         justify-content: center;
     }
 
@@ -525,22 +629,16 @@ footer div {
     }
 
     input[type="search"] {
-        font-size: 1em;
         padding: 14px 0 14px 15px;
     }
-        /* FILTRES */ 
-    #filtres {
-        display: block;
-        align-items: flex-start;
-        font-size: 1em;
-        margin-left: 15px;
-    }
+        /* FILTRES */
 
+    #filtres h3 {
+        margin-top: 15px;
+    }
+    
     #filtres ul {
         justify-content: flex-start;
-        padding-left: 0;
-        width: 100%;
-        font-size: 0.9em;
     }
 
     #filtres li {
@@ -563,10 +661,7 @@ footer div {
     }
             /* LES PLUS POPULAIRES */
     #result_pop {
-        width: auto;
         height: 520px;
-        margin: auto;
-        border-radius: 0;
         padding: 20px 15px;
     }
 
@@ -582,15 +677,12 @@ footer div {
     .card_pop {
         width: auto;
         height: 130px;
-        border-radius: 20px;
         margin: auto;
     }
 
     .card_pop img {
-        object-fit: cover;
         width: 130px;
         height: 120px;
-        border-radius: 15px 0 0 15px;
         margin: 5px;
     }
 
