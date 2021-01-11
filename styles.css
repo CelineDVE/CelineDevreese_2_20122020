@@ -148,7 +148,7 @@ input[type="image"] {
 #filtres li:hover {
     background-color: #0065FC;
     color: #fff;
-    border-color: #fff;
+    border-color: #0065FC;
 }
 /* BLOC INFO */
 #bloc_info {
@@ -184,8 +184,7 @@ i.fas.fa-star.star_grey {
     /* CARTES D'HEBERGEMENTS */
 #hebergements {
     display: flex;
-    flex-direction: row-reverse;
-    flex-wrap: wrap;
+    flex-flow: row-reverse wrap;
     justify-content: space-between;
     margin: 0 30px;
 }
@@ -328,14 +327,12 @@ i.fas.fa-star.star_grey {
     height: 260px;
 }
 
-.card_activities h3, .double_card h3,
-#activity1 h3 {
+.card_activities h3, .double_card h3, #activity1 h3 {
     font-size: .8em;
     margin: 10px 15px;
 }
 
-#activity1, #activity2, 
-.activity3 {
+#activity1, #activity2, .activity3 {
     box-shadow: 3px 3px 20px #d9d9d9;
     border-radius: 10px;
 }
@@ -443,13 +440,7 @@ footer div {
     }
             /* AU SURVOL */
     header nav li a:hover {
-        color: #0065FC;
         border-top: none;
-    }
-
-    header nav li:hover {
-        color: #0065FC;
-        list-style-type: disclosure-closed;
     }
     /* BLOC PARAGRAPHE */
     #bold_black {
@@ -530,6 +521,7 @@ footer div {
 
     .card_pop img {
         border-radius: 15px 0 0 15px;
+        margin-bottom: 3px;
     }
 
     .card_pop h3 {
@@ -578,8 +570,7 @@ footer div {
         font-size: 1.2em;
     }
 
-    .card_activities h3, .double_card h3,
-    #activity1 h3 {
+    .card_activities h3, .double_card h3, #activity1 h3 {
     font-size: 1em;
     }
 
@@ -837,13 +828,11 @@ footer div {
         height: 180px;
     }
 
-    .card_activities img, #activity1 img,
-    #activity2 img, .activity3 img {
+    .card_activities img, #activity1 img, #activity2 img, .activity3 img {
         height: 130px;
     }
 
-    .card_activities h3, .double_card h3,
-    #activity1 h3 {
+    .card_activities h3, .double_card h3, #activity1 h3 {
     margin-top: 15px;
     }
     /* FOOTER */
